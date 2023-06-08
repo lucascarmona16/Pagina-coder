@@ -1,0 +1,79 @@
+
+$primary-color: #63a1d8;
+$secondary-color: #63a1d8;
+
+
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.header-index{
+    margin: 20px;
+}
+nav {
+  background-color: $secondary-color;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+section {
+  padding: 20px;
+}
+.df-main-contacto{
+    text-align: center;
+    background-color: gray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    
+  }
+  
+  .grid-item {
+    background-color: #63a1d8;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .titulo-imagenes{
+    background-color: gray;
+  }
+  .section-df{
+    margin: 20px;
+    background-color: bisque;
+  }
+  .imagen-index{
+    margin: 20px;
+  }
+footer {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
