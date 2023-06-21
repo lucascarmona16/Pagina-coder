@@ -4,23 +4,35 @@ $secondary-color: #63a1d8;
 
 
 
-.header {
-  background-color: $primary-color;
-  color: white;
-  padding: 20px;
-  text-align: center;
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("./../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") ;
+}
+body {
+  font-family: Nunito !important; 
+  
 }
 .header-index{
-    margin: 20px;
+    
+    .container-fluid {
+      justify-content: flex-end !important;
+    }
+
+    img {
+      display: block;
+      max-width: 120px;
+      margin: auto;
+    }
 }
 nav {
   background-color: $secondary-color;
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    padding: 3px 0;
+    display: block;
+    text-align: center;
 
     li {
       margin: 0 10px;
@@ -43,12 +55,15 @@ section {
 }
 .df-main-contacto{
     text-align: center;
-    background-color: gray;
+    
+    h1 {
+      margin: 10px auto;
+    }
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 50% 50%;
     grid-gap: 10px;
     margin: 20px;
     
@@ -56,9 +71,31 @@ section {
   
   .grid-item {
     background-color: #63a1d8;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     font-size: 24px;
+    color: white;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 20px;
+    img {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .contenido {
+    padding: 15px;
+    text-align: left;
+    
+    input, textarea {
+      display: block;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   .titulo-imagenes{
@@ -68,12 +105,13 @@ section {
     margin: 20px;
     background-color: bisque;
   }
-  .imagen-index{
-    margin: 20px;
-  }
+
 footer {
   background-color: $primary-color;
   color: white;
   padding: 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+
 }
