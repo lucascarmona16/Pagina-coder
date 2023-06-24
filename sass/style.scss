@@ -16,7 +16,7 @@ color: $primary-color !important;
 body {
   font-family: Nunito !important; 
 }
-.header-index{
+.header-index {
     
     .container-fluid {
       justify-content: flex-end !important;
@@ -56,7 +56,7 @@ nav {
 section {
   padding: 20px;
 }
-.df-main-contacto{
+.df-main-contacto {
     text-align: center;
     
     h1 {
@@ -92,7 +92,9 @@ section {
 
   .boton-grid {
     border-radius: 20px;
-    background: rgb(151, 147, 147)
+    background: rgb(255, 254, 254);
+    padding: 2px 10px;
+    margin-top: 5px;
   }
 
   .contenido {
@@ -111,11 +113,27 @@ section {
   }
 
 
-  .section-df{
+  .section-df {
     margin: 20px;
     background-color: $primary-color;
     border-radius: 10px;
     color: rgb(240, 248, 255);
+    text-align: center;
+    .partners-container {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 700px;
+      flex-wrap: wrap;
+      .partner {
+        img {
+          width: 120px;
+          margin: 10px;
+        }
+      }
+    }
+
   }
 
 
@@ -127,6 +145,7 @@ section {
   background-size: cover;
   background-position: bottom;
 }
+
 .nosotros-banner {
   display: block;
   width: 100%;
@@ -143,12 +162,14 @@ section {
   height: 100px;
   overflow: hidden;
   position: relative;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .scrolling-text {
   position: absolute;
   white-space: nowrap;
-  animation: scroll-text 15s linear infinite;
+  animation: scroll-text 12s linear infinite;
 }
 
 @keyframes scroll-text {
