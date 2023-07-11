@@ -1,3 +1,7 @@
+.df-main-contacto {
+  background: red !important;
+}
+
 @font-face {
   font-family: "Nunito";
   src: url("./../fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
