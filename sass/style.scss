@@ -1,5 +1,4 @@
-@use './contact/contact';
-@use './gallery/gallery';
+
 
 $primary-color: #63a1d8;
 $secondary-color: #63a1d8;
@@ -147,6 +146,14 @@ section {
 
   }
 
+  .nosotros-banner {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-image: url("./../img/empresarios.jpg");
+    background-size: cover;
+    background-position: top;
+  }
 
 .main-banner {
   display: block;
@@ -157,14 +164,7 @@ section {
   background-position: bottom;
 }
 
-.nosotros-banner {
-  display: block;
-  width: 100%;
-  height: 300px;
-  background-image: url("./../img/empresarios.jpg");
-  background-size: cover;
-  background-position: top;
-}
+
 
 .scrolling-text-container {
   color: $primary-color;
